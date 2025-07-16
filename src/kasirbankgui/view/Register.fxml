@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.collections.FXCollections?>
+<?import java.lang.String?>
+
+<VBox alignment="CENTER" spacing="10.0"
+      xmlns="http://javafx.com/javafx/8"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="kasirbankgui.controller.RegisterController">
+
+    <padding><Insets top="20" bottom="20" left="30" right="30"/></padding>
+
+    <Label text="Register Akun Baru" style="-fx-font-size: 18px;" />
+    <TextField fx:id="namaField" promptText="Nama Nasabah" />
+    <PasswordField fx:id="pinField" promptText="PIN (4 digit)" />
+    <ComboBox fx:id="jenisRekeningComboBox">
+        <items>
+            <FXCollections fx:factory="observableArrayList">
+                <String fx:value="Tabungan" />
+                <String fx:value="Giro" />
+            </FXCollections>
+        </items>
+    </ComboBox>
+
+    <Button text="Daftar" onAction="#handleRegister" />
+    <Label fx:id="statusLabel" textFill="green" />
+</VBox>
