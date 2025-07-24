@@ -121,6 +121,13 @@ Lalu diimplementasikan di RegisterService.java
     boolean hasil = service.register("Dilan", "1234", "Tabungan");
 </p>
 
+### FXMain.java
+<img width="839" height="275" alt="MainFX" src="https://github.com/user-attachments/assets/9c438d3a-f24d-48a9-b7a0-e2f2bcae4b19" />
+<p>Class ini adalah gerbang utama aplikasi JavaFX. Di sinilah method start(Stage stage) dijalankan saat program pertama kali di-run. Di dalam method tersebut, kita load file FXML.fxml sebagai tampilan awal, lalu menampilkan jendela aplikasi lewat primaryStage.show(). Biasanya digunakan untuk set judul jendela, ukuran scene, dan inisialisasi awal tampilan. Bisa dibilang ini "pintu depan"-nya aplikasi, tempat pertama kali pengguna masuk sebelum masuk ke fitur lainnya.</p>
+
+### Struktur Folder
+<img width="314" height="438" alt="Struktur Folder" src="https://github.com/user-attachments/assets/35850e22-92e8-4140-8c5a-53cb820d9981" />
+
 ## Demo Proyek
 <ul>
   <li>Github: <a href="">Github</a></li>
